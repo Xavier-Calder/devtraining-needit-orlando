@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Closes NeedIt Tasks overdue for more than the autoCloseOverdue property timeframe, and logs the closure.</description>
+        <internal_name>close_overdue_tasks</internal_name>
+        <label_cache>[{"name":"3a96bce7-666e-400d-b46d-c47ff24e109b.Records","label":"1➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a96bce7-666e-400d-b46d-c47ff24e109b.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a96bce7-666e-400d-b46d-c47ff24e109b.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41f0e211-ff5b-483c-b1ff-f36e8d3b8753.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41f0e211-ff5b-483c-b1ff-f36e8d3b8753.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5da51d5-5470-479c-ba94-137ebe31c774.parameter","label":"1➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment Records","type":"records","base_type":"records","attributes":{"uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"records"}},{"name":"a5da51d5-5470-479c-ba94-137ebe31c774.parameter1","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Close Overdue Tasks</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-23 00:23:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>52eb67f9db2110104ba87a61399619b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Close Overdue Tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_52eb67f9db2110104ba87a61399619b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-23 01:03:59</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=52eb67f9db2110104ba87a61399619b2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=52eb67f9db2110104ba87a61399619b2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=52eb67f9db2110104ba87a61399619b2^sys_idNOT IN421533b1db6110104ba87a613996199e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Close Overdue Tasks">52eb67f9db2110104ba87a61399619b2</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-23 01:03:59</sys_created_on>
+        <sys_id>421533b1db6110104ba87a613996199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-23 01:03:59</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=421533b1db6110104ba87a613996199e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>421533b1db6110104ba87a613996199e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-23 01:03:59</sys_created_on>
+        <sys_id>061533b1db6110104ba87a613996199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-23 01:03:59</sys_updated_on>
+        <value>1970-01-01 23:00:00</value>
+        <variable display_value="">a745a104c32222002841b63b12d3ae18</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>421533b1db6110104ba87a613996199e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-23 01:03:59</sys_created_on>
+        <sys_id>0e1533b1db6110104ba87a613996199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-23 01:03:59</sys_updated_on>
+        <value>5</value>
+        <variable display_value="">c685a104c32222002841b63b12d3aed3</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=52eb67f9db2110104ba87a61399619b2^sys_idNOT INdeeb67f9db2110104ba87a61399619b2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>52eb67f9db2110104ba87a61399619b2</id>
+        <name>Close Overdue Tasks</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-23 00:23:52</sys_created_on>
+        <sys_id>deeb67f9db2110104ba87a61399619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-23 00:23:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>
